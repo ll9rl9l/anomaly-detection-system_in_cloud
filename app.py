@@ -39,6 +39,7 @@ if check_login():
             st.subheader("🌍 IP ACTIVITY")
             st.dataframe(result[["IP", "Requests", "CPU", "status"]])
 
+        # 🚨 هنا التنبيه الحقيقي
         alert_system(result)
 
         time.sleep(2)
